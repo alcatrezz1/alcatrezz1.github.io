@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Alcatrezz, Roblox scripter and game designer. Luau systems, combat, bosses and progression.">
+<meta name="theme-color" content="#0f0b0c">
+<link rel="canonical" href="https://alcatrezz1.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Alcatrezz">
+<meta property="og:title" content="Alcatrezz, Roblox scripter and game designer">
+<meta property="og:description" content="Luau systems, combat, bosses and progression. Featured project: GRAFT, a tentacle brawler in closed alpha.">
+<meta property="og:url" content="https://alcatrezz1.github.io/">
+<meta property="og:image" content="https://alcatrezz1.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://alcatrezz1.github.io/img/og.jpg">
+<title>Alcatrezz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@600;700;800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%230f0b0c%22/%3E%3Cpath d=%22M9 26 13 6h6l4 20h-5l-1-5h-4l-1 5z%22 fill=%22%23b4151f%22/%3E%3C/svg%3E">
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">ALCATREZZ<span>.</span></a>
+    <ul>
+      <li><a class="link" href="#skills">Skills</a></li>
+      <li><a class="link" href="#work">Work</a></li>
+      <li><a class="link" href="#code">Scripting</a></li>
+      <li><a class="link" href="#design">Design</a></li>
+      <li><a class="link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="intro" id="top">
+  <div class="wrap intro-grid">
+    <div class="intro-copy">
+      <div class="chips">
+        <span class="chip live">Open for commissions</span>
+        <span class="chip">Roblox / Luau</span>
+      </div>
+      <h1>Alca<span class="tear">t</span>rezz</h1>
+      <p class="role">Roblox scripter <i>&amp;</i> game designer</p>
+      <p class="pitch">I design game systems and write them in Luau, from the first rule on paper to a live build in players' hands. Movement, combat, bosses, progression, saving, UI and onboarding.</p>
+      <div class="cta">
+        <a class="btn primary" href="#work">See my work</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
+    <figure class="intro-plate">
+      <img src="img/creature.jpg" alt="A blocky creature with four red tentacle legs and four tentacle arms, from GRAFT">
+      <figcaption><span class="label">Now building</span> GRAFT, my solo tentacle brawler in closed alpha</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">What I do</span>
+      <h2>Two jobs, one person</h2>
+      <p>I can take a mechanic from idea to tuning without a hand-off in the middle. That means fewer lost details and faster iteration.</p>
+    </div>
+    <div class="disciplines">
+      <article class="disc">
+        <span class="disc-k">01</span>
+        <h3>Scripting</h3>
+        <p>Clean, typed Luau with server authority where it matters. One config per system, so tuning never means digging through code.</p>
+        <ul>
+          <li>Procedural animation and inverse kinematics</li>
+          <li>Server-validated combat and hit detection</li>
+          <li>Anti-exploit: movement checks, rate-limited remotes</li>
+          <li>Saving with ProfileStore</li>
+          <li>Reactive UI on Fusion 0.3</li>
+          <li>Boss AI with telegraphed attacks</li>
+          <li>Multi-place games on shared Packages</li>
+          <li>PC and mobile input</li>
+        </ul>
+      </article>
+      <article class="disc">
+        <span class="disc-k">02</span>
+        <h3>Game design</h3>
+        <p>Core loops, combat feel and progression that stays fair. I tune from playtests, not from guesses.</p>
+        <ul>
+          <li>Core mechanics and game rules</li>
+          <li>Combat feel and boss encounters</li>
+          <li>Progression: levels, perks, prestige</li>
+          <li>Quests and daily loops</li>
+          <li>Onboarding and tutorials with analytics</li>
+          <li>Level layout for vertical movement</li>
+          <li>Monetization without pay-to-win</li>
+          <li>Running a closed alpha with testers</li>
+        </ul>
+      </article>
+    </div>
+    <p class="also"><span class="label">Also</span> Low-poly and stud-style modeling in Blender and Studio.</p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Featured work</span>
+      <h2>GRAFT</h2>
+      <p>A Roblox brawler where tentacles are your legs, your weapons and your health. Every hit tears off the tentacle it lands on. I made it alone: design, every script, the world and the live alpha.</p>
+    </div>
+    <div class="project">
+      <div class="plates">
+        <figure class="plate p-wide"><button type="button" data-cap="The arena: an infected city with red growth. Every wall, roof and ceiling can be climbed."><img src="img/arena.jpg" alt="Wide view of GRAFT's infected city arena" loading="lazy"></button><figcaption><b>Arena</b>Every surface is climbable.</figcaption></figure>
+        <figure class="plate p-tall"><button type="button" data-cap="The Grafter: quest giver and the first prestige fight."><img src="img/grafter.jpg" alt="The Grafter, a pale figure fused into a column" loading="lazy"></button><figcaption><b>The Grafter</b>Keeper and prestige boss.</figcaption></figure>
+        <figure class="plate acid p-third"><button type="button" data-cap="The Spillway: a second zone with hollow pipes you climb into and acid that only poison legs survive."><img src="img/spillway.jpg" alt="The Spillway waste station" loading="lazy"></button><figcaption><b>Spillway</b>Second zone, new rules.</figcaption></figure>
+        <figure class="plate p-third"><button type="button" data-cap="The Weaver: a spider boss that leaps with a landing circle shown first."><img src="img/weaver.jpg" alt="The Weaver spider boss" loading="lazy"></button><figcaption><b>The Weaver</b>Telegraphed leap attack.</figcaption></figure>
+        <figure class="plate acid p-third"><button type="button" data-cap="Sludge Boss: sits in acid, so you need poison legs to fight it."><img src="img/sludge.jpg" alt="The Sludge Boss in an acid basin" loading="lazy"></button><figcaption><b>Sludge Boss</b>Gated by your build.</figcaption></figure>
+      </div>
+      <aside class="proj-meta">
+        <dl>
+          <div><dt>Role</dt><dd>Solo: design, scripting, world, live ops</dd></div>
+          <div><dt>Status</dt><dd>Closed alpha with testers</dd></div>
+          <div><dt>Content</dt><dd>2 zones, 4 bosses, 6 skills, prestige, tutorial place</dd></div>
+          <div><dt>Stack</dt><dd>Luau, Fusion 0.3, ProfileStore, Packages</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="code">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Scripting</span>
+      <h2>Code from the project</h2>
+      <p>Two real modules from GRAFT. I comment why, not what, so the next person can change the code without breaking the reasoning behind it.</p>
+    </div>
+    <div class="code-card">
+      <div class="tabs" role="tablist" aria-label="Code samples">
+        <button class="tab" role="tab" id="t-fabrik" aria-selected="true" aria-controls="c-fabrik" type="button">Fabrik.lua</button>
+        <button class="tab" role="tab" id="t-net" aria-selected="false" aria-controls="c-net" type="button">Network.lua</button>
+      </div>
+      <div class="code-panel" id="c-fabrik" role="tabpanel" aria-labelledby="t-fabrik">
+        <p class="code-note">IK for tentacle legs. A tentacle needs an organic curve over many segments, so FABRIK instead of two-bone IK.</p>
+        <pre><code class="lua">-- points is mutated in place. lengths holds (#points - 1) segment lengths.
+function Fabrik.solve(points, lengths, origin: Vector3, target: Vector3, iterations: number, tolerance: number)
+	local n = #points
+	if n &lt; 2 then
+		return points
+	end
+
+	local total = 0
+	for _, length in ipairs(lengths) do
+		total += length
+	end
+
+	local toTarget = target - origin
+
+	-- out of reach: the chain just stretches straight at the target
+	if toTarget.Magnitude &gt; total then
+		local dir = safeUnit(toTarget, Vector3.new(0, -1, 0))
+		points[1] = origin
+		for i = 2, n do
+			points[i] = points[i - 1] + dir * lengths[i - 1]
+		end
+		return points
+	end
+
+	for _ = 1, iterations do
+		-- backward pass: pin the tip to the target, walk back to the base
+		points[n] = target
+		for i = n - 1, 1, -1 do
+			local dir = safeUnit(points[i] - points[i + 1], Vector3.new(0, 1, 0))
+			points[i] = points[i + 1] + dir * lengths[i]
+		end
+		-- forward pass: pin the base back to the shoulder, walk out to the tip
+		points[1] = origin
+		for i = 2, n do
+			local dir = safeUnit(points[i] - points[i - 1], Vector3.new(0, -1, 0))
+			points[i] = points[i - 1] + dir * lengths[i - 1]
+		end
+		if (points[n] - target).Magnitude &lt;= tolerance then
+			break
+		end
+	end
+
+	return points
+end</code></pre>
+      </div>
+      <div class="code-panel" id="c-net" role="tabpanel" aria-labelledby="t-net" hidden>
+        <p class="code-note">Every remote is declared once with its own budget. Spam is dropped before any handler runs, and handlers still validate every argument.</p>
+        <pre><code class="lua">type Bucket = { Tokens: number, Stamp: number }
+local buckets: { [Player]: { [string]: Bucket } } = {}
+
+-- server side listener with the rate limit already applied
+function Network.onServer(name: string, handler: (Player, ...any) -&gt; ())
+	assert(IS_SERVER, "onServer is server only")
+	local definition = Network.Definitions[name]
+	assert(definition, "undeclared remote " .. name)
+
+	Network.get(name).OnServerEvent:Connect(function(player: Player, ...: any)
+		local perPlayer = buckets[player]
+		if not perPlayer then
+			perPlayer = {}
+			buckets[player] = perPlayer
+		end
+		local now = os.clock()
+		local bucket = perPlayer[name]
+		if not bucket then
+			bucket = { Tokens = definition.Burst, Stamp = now }
+			perPlayer[name] = bucket
+		end
+		bucket.Tokens = math.min(definition.Burst, bucket.Tokens + (now - bucket.Stamp) * definition.Rate)
+		bucket.Stamp = now
+		if bucket.Tokens &lt; 1 then
+			return
+		end
+		bucket.Tokens -= 1
+		handler(player, ...)
+	end)
+end</code></pre>
+      </div>
+    </div>
+
+    <div class="systems">
+      <div class="sys"><h3>Climbing</h3><p>Legs grip walls and ceilings and flip over slab edges in both directions.</p></div>
+      <div class="sys"><h3>Combat</h3><p>Per-limb health, combat timer, regrowth queue, kill credit for poison ticks.</p></div>
+      <div class="sys"><h3>Anti-exploit</h3><p>Every fast move is checked on the server and snapped back if it does not add up.</p></div>
+      <div class="sys"><h3>Boss arenas</h3><p>Parallel arena copies, so several players fight the same boss at once.</p></div>
+      <div class="sys"><h3>Saving</h3><p>ProfileStore with a separate Studio store, so tests never touch live data.</p></div>
+      <div class="sys"><h3>Two places</h3><p>The tutorial lives in its own place and shares the game's code through Packages.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="design">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Game design</span>
+      <h2>Rules first, then feel</h2>
+      <p>I write the rules down before I touch Studio. Three that run through everything I designed for GRAFT:</p>
+    </div>
+    <div class="principles">
+      <div class="pr"><h3>Skill over stats</h3><p>Levels unlock features, not damage. No auto-aim. A new player with good aim can beat a veteran.</p></div>
+      <div class="pr"><h3>Costs you can see</h3><p>Skills spend real tentacles. Throw your arm as a spear and you fight with one arm less until it grows back.</p></div>
+      <div class="pr"><h3>Never pay to win</h3><p>Monetization is skins only. Everyone shares one body, so a skin is visible and progress stays earned.</p></div>
+    </div>
+
+    <div class="core">
+      <div class="demo" aria-label="Interactive mechanic demo">
+        <div class="demo-top">
+          <span class="label">Prototype: tap a tentacle to tear it</span>
+          <span class="mono" id="demo-state" style="color:var(--muted)">OUT OF COMBAT</span>
+        </div>
+        <canvas id="creature" width="800" height="600" aria-label="A blocky creature with tentacles. Click a tentacle to tear it off."></canvas>
+        <div class="hud">
+          <div><small>Legs</small><b id="h-legs">2</b></div>
+          <div><small>Arms</small><b id="h-arms">1</b></div>
+          <div><small>Height</small><b id="h-height">1.0x</b></div>
+          <div><small>Reach</small><b id="h-reach">1.0x</b></div>
+        </div>
+        <div class="demo-actions">
+          <button class="btn primary" id="b-kill" type="button">Get a kill</button>
+          <button class="btn" id="b-reset" type="button">Reset</button>
+        </div>
+        <p class="demo-log" id="demo-log">A fresh graft: 2 legs and 1 arm. Get a kill to grow, or tear something off.</p>
+      </div>
+      <div class="rules">
+        <span class="label" style="margin-bottom:6px">The core loop I designed</span>
+        <div class="rule"><span class="k">R1</span><div><h3>Tentacles are health</h3><p>100 HP each, 34 per hit. The last one torn is death.</p></div></div>
+        <div class="rule"><span class="k">R2</span><div><h3>Legs or arms</h3><p>Legs give height, speed and reach. Arms do the hitting.</p></div></div>
+        <div class="rule"><span class="k">R3</span><div><h3>A kill grows you</h3><p>+1 tentacle per kill. Dying in a fight halves what you own.</p></div></div>
+        <div class="rule"><span class="k">R4</span><div><h3>Combat locks healing</h3><p>12 seconds after a hit. Then one tentacle regrows every 4 seconds.</p></div></div>
+      </div>
+    </div>
+
+    <div class="sec-head" style="margin-top:64px">
+      <span class="label">Playtest decisions</span>
+      <h3 class="h-sub">What testers showed me, and what I changed</h3>
+    </div>
+    <div class="cases">
+      <article class="case"><h3>Skills with no punch</h3><div class="col"><small>Problem</small><p>Two skills worked but felt like nothing happened.</p></div><div class="col"><small>Change</small><p>Replaced them with SLAM, which hits legs, and SPEAR, where you throw your own arm.</p></div><div class="col result"><small>Result</small><p>Skills cost a body part. That reads instantly.</p></div></article>
+      <article class="case"><h3>A boss you could kite</h3><div class="col"><small>Problem</small><p>On 5 legs you could circle the first keeper forever.</p></div><div class="col"><small>Change</small><p>Lead aim, a sweep you can't sidestep, rage on long misses, no self-heal.</p></div><div class="col result"><small>Result</small><p>Testers called it long, hard and fun.</p></div></article>
+      <article class="case"><h3>Three hits was too flat</h3><div class="col"><small>Problem</small><p>Every limb broke in 3 hits, so tougher zones had nowhere to go.</p></div><div class="col"><small>Change</small><p>HP per tentacle. Levels give no HP and no damage.</p></div><div class="col result"><small>Result</small><p>Room for poison, mutations and new zones.</p></div></article>
+      <article class="case"><h3>Bunny hopping</h3><div class="col"><small>Problem</small><p>Chained jumps beat walking on many legs.</p></div><div class="col"><small>Change</small><p>A running jump ends in a heavy landing.</p></div><div class="col result"><small>Result</small><p>Leg count decides speed again.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap process">
+    <div class="sec-head" style="margin-bottom:0">
+      <span class="label">How I work</span>
+      <h2>What working with me looks like</h2>
+      <p>You get a written plan before any code, builds you can test early, and changes based on what players do, not what we hoped they would do.</p>
+      <div class="toolkit">
+        <span>Luau</span><span>Roblox Studio</span><span>Fusion 0.3</span><span>ProfileStore</span><span>Packages</span><span>AnalyticsService</span><span>Blender</span>
+      </div>
+    </div>
+    <ol class="loop">
+      <li><b>01</b><span><strong>Theory first.</strong> Rules, numbers and edge cases agreed before the first script.</span></li>
+      <li><b>02</b><span><strong>Safe edits.</strong> Every changed script is backed up before I touch it.</span></li>
+      <li><b>03</b><span><strong>Test early.</strong> You get a playable build, not a promise.</span></li>
+      <li><b>04</b><span><strong>Tune from feedback.</strong> Config values change, the code stays stable.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="contact" style="border-bottom:0">
+  <div class="wrap">
+    <span class="label">Open to work</span>
+    <h2>Got a game<br>that needs <span>systems?</span></h2>
+    <p style="color:var(--muted);margin-top:16px;max-width:52ch">Scripting, game design, or both at once. Message me on Discord.</p>
+    <div class="handle">
+      <div class="box"><span class="label">Discord</span><b id="discord">Alcatrezz</b></div>
+      <button class="btn primary" id="copy" type="button">Copy handle</button>
+      <a class="box gh" href="https://github.com/alcatrezz1" target="_blank" rel="noopener"><span class="label">GitHub</span><b>alcatrezz1</b></a>
+      <span class="copied" id="copied" aria-live="polite"></span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span>© 2026 Alcatrezz</span><span>Screenshots and code from GRAFT · <a href="https://github.com/alcatrezz1" target="_blank" rel="noopener">GitHub</a></span></div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="btn close" id="lb-close" type="button">Close</button>
+  <div class="inner"><img id="lb-img" alt=""><p id="lb-cap"></p></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
