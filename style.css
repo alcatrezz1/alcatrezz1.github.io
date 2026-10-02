@@ -277,3 +277,18 @@ a.btn { text-decoration: none; display: inline-block; }
 a.box.gh { text-decoration: none; color: var(--fg); }
 a.box.gh:hover { border-color: var(--ember); }
 a.box.gh b { user-select: auto; }
+
+/* three disciplines + map notes */
+.disciplines { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.disc h3 { font-size: clamp(1.5rem, 2.6vw, 2rem); }
+.map-notes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--line); background: var(--panel); margin-top: 10px; }
+.map-notes div { padding: 16px 18px; border-right: 1px solid var(--line); display: grid; gap: 6px; align-content: start; }
+.map-notes div:last-child { border-right: 0; }
+.map-notes b { font: 700 1.9rem/1 var(--f-display); font-variant-numeric: tabular-nums; }
+.map-notes span { color: var(--muted); font-size: 0.88rem; line-height: 1.35; }
+@media (max-width: 900px) {
+  .disciplines { grid-template-columns: minmax(0, 1fr); }
+  .map-notes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .map-notes div:nth-child(2) { border-right: 0; }
+  .map-notes div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+}
