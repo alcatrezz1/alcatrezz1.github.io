@@ -292,3 +292,15 @@ a.box.gh b { user-select: auto; }
   .map-notes div:nth-child(2) { border-right: 0; }
   .map-notes div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
 }
+
+/* ability kit clip */
+.plate.clip video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
+.plate.clip figcaption { pointer-events: none; }
+.plate.clip .clip-sound {
+  all: unset; box-sizing: border-box; position: absolute; top: 10px; right: 10px; z-index: 2; cursor: pointer;
+  padding: 8px 12px; border: 1px solid var(--line); background: rgba(15, 11, 12, 0.78); backdrop-filter: blur(4px);
+  font: 600 0.7rem/1 var(--f-display); letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg);
+}
+.plate.clip .clip-sound:hover, .plate.clip .clip-sound[aria-pressed="true"] { color: var(--ember); border-color: var(--ember); }
+.plate.clip .clip-sound:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+.systems.kit { margin-top: 10px; }

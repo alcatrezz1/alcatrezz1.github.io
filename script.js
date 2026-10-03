@@ -312,3 +312,22 @@
     c.innerHTML = out;
   });
 })();
+
+(function () {
+  "use strict";
+  /* ---------- ability kit clip: sound toggle, respect reduced motion ---------- */
+  var v = document.getElementById("kit-video");
+  var b = document.getElementById("kit-sound");
+  if (!v || !b) return;
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    v.removeAttribute("autoplay");
+    v.pause();
+    v.controls = true;
+  }
+  b.addEventListener("click", function () {
+    v.muted = !v.muted;
+    if (!v.muted) { v.play().catch(function () {}); }
+    b.setAttribute("aria-pressed", v.muted ? "false" : "true");
+    b.textContent = v.muted ? "Sound on" : "Sound off";
+  });
+})();

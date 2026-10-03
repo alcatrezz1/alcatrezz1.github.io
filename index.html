@@ -30,6 +30,7 @@
     <ul>
       <li><a class="link" href="#skills">Skills</a></li>
       <li><a class="link" href="#work">Work</a></li>
+      <li><a class="link" href="#abilities">Abilities</a></li>
       <li><a class="link" href="#code">Scripting</a></li>
       <li><a class="link" href="#design">Design</a></li>
       <li><a class="link" href="#building">Building</a></li>
@@ -135,6 +136,36 @@
           <div><dt>Stack</dt><dd>Luau, Fusion 0.3, ProfileStore, Packages</dd></div>
         </dl>
       </aside>
+    </div>
+  </div>
+</section>
+
+<section id="abilities">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Ability kit</span>
+      <h2>Combat that hits back</h2>
+      <p>Skills built outside GRAFT for a regular R6 character: a 4-hit punch combo and Asteroid, a shooter ability in the style of World Trigger. Animation, effects, sound and netcode are all mine.</p>
+    </div>
+    <div class="project">
+      <figure class="plate clip">
+        <video id="kit-video" src="img/asteroid.mp4" poster="img/asteroid-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Gameplay clip: a 4-hit punch combo on training dummies, then the Asteroid ability splitting a trion cube into pieces and firing them"></video>
+        <button class="btn clip-sound" id="kit-sound" type="button" aria-pressed="false">Sound on</button>
+        <figcaption><b>In Studio</b>M1 combo into Asteroid, recorded live.</figcaption>
+      </figure>
+      <aside class="proj-meta">
+        <dl>
+          <div><dt>Role</dt><dd>Solo: scripting, animation, VFX, sound</dd></div>
+          <div><dt>Rig</dt><dd>R6, anime-style poses with limbs that break off the joint</dd></div>
+          <div><dt>Netcode</dt><dd>Server-side hitboxes, effects drawn on clients</dd></div>
+          <div><dt>Effects</dt><dd>Flipbook sprites made in Blender</dd></div>
+        </dl>
+      </aside>
+    </div>
+    <div class="systems kit">
+      <div class="sys"><h3>4-hit combo</h3><p>Cannon-style windups you can read from behind, hitstop on contact and a heavy finisher with an impact frame and knockback.</p></div>
+      <div class="sys"><h3>Asteroid</h3><p>Hold to form a cube and split it 1, 8 or 27 ways. More pieces, wider volley, less damage each. Release to fire.</p></div>
+      <div class="sys"><h3>Fair netcode</h3><p>Server and clients run the same seeded paths, so the volley looks identical for everyone and hits can't be faked.</p></div>
     </div>
   </div>
 </section>
@@ -354,7 +385,7 @@ end</code></pre>
 </section>
 
 <footer>
-  <div class="wrap"><span>© 2026 Alcatrezz</span><span>Screenshots, map and code from GRAFT · <a href="https://github.com/alcatrezz1" target="_blank" rel="noopener">GitHub</a></span></div>
+  <div class="wrap"><span>© 2026 Alcatrezz</span><span>Screenshots, map and code from GRAFT and my ability kit ·<a href="https://github.com/alcatrezz1" target="_blank" rel="noopener">GitHub</a></span></div>
 </footer>
 
 <div class="lightbox" id="lightbox" hidden>
